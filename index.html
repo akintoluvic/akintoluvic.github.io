@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vick Greenfields' Portfolio Page</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="normalize.css">
+    <!-- <link href="https://unpkg.com/sanitize.css" rel="stylesheet" /> -->
     <style>
         * {
             width: 100%;
@@ -46,6 +46,8 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         header #text {display: flex;}
+        header #text #left img {height: 14px; width: 14px;margin-left: 15px;}
+        header #text #left p {font-size: 1.1rem; margin-top: 3px;}
         header #right {padding-top: 28vh;}
         header #right p {font-size: 1.3rem; width: 33vw;margin-left: 30px;}
         header #right #p-one {margin-bottom: 20px;}
@@ -92,7 +94,11 @@
             <div id="left">
                 <h1>Vick Greenfields</h1>
                 <h3>Frontend Developer & UI Designer</h3>
-                <p>Follow me on</p>
+                <p>Follow me on 
+                    <a href="http://twitter.com/akintoluvic" target="_blank"><img src="/images/twitter 1.png" alt="twitter handle" ></a>
+                    <a href="http://linkedin.com/in/akintoluvic" target="_blank"><img src="/images/linkedin 1.png" alt="linkedin handle"></a>
+                    <a href="http://github.com/akintoluvic" target="_blank"><img src="/images/github 1.png" alt="github handle"></a>
+                </p>
             </div>
             <div id="right">
                 <p id="p-one"><strong>My Passion:</strong> Turning great designs into stunning Web Pages is my passion.</p>
