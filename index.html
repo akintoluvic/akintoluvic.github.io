@@ -5,40 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vick Greenfields' Portfolio Page</title>
-    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <script src="https://kit.fontawesome.com/372714b41d.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     -->
     <style>
         * {
-            width: 100%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
             margin: 0
         }
         header {
             background-image: url('./images/bgport.png');
+            background-size: contain;
+            background-repeat: no-repeat;
             color: #ffffff;
             background-color: black;
             height: 100vh;
-            width: 100vw;
+            width: 100%;
             padding: 0 60px;
         }
         header img {height: 28px; width: 84px;}
         nav {
             padding-top: 30px;
             display: flex;
-            /* justify-content: space-between; */
+            justify-content: space-between;
         }
+        /* nav div :nth-child(1) {margin-left: 130px;} */
+        nav div :last-child {
+            padding: 10px 20px;
+            background-color: #fff;
+            color:black;
+            border-radius: 10px;
+            margin-left: 30px;
+            }
         nav a {
             text-decoration: none;
             color: #ffffff;
-            padding-left: 20px;
+            padding-left: 30px;
             font-weight: bold;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        header #text {display: flex;}
-        header #right {padding-top: 33vh;}
-        header #right p {font-size: 1.3rem; width: 33vw;}
-        h1, h3, p {padding-left: 105px;}
+        header #text {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5vw;
+        }
+        header #text #left i {height: 14px; width: 14px;margin-left: 15px;}
+        header #text #left p {font-size: 1.1rem; margin-top: 3px;}
+        /* header #left {padding-left: 105px;} */
+        header #right {padding-top: 28vh;}
+        header #right p {font-size: 1.3rem; width: 33vw;margin-left: 30px;}
+        header #right #p-one {margin-bottom: 20px;}
         header h1 {margin-top: 30vh; font-size: 3.1rem;}
-        header h3 {font-size: 1.6rem; margin-top: -45px;}
+        header h3 {font-size: 1.55rem; margin-top: -35px;}
+        
+
         #big-card {
             width: 430px;
             height: 614px;
@@ -61,15 +86,15 @@
     
     <header>
         <nav>
-            <div>
+            <section>
                 <img src="./images/VickyG.png" alt="" srcset="">
-            </div>
+            </section>
             <div>
-                <a href="#">PROJECTS</a>
-                <a href="#">EXPERIENCE</a>
-                <a href="#">CONTACT ME</a>
-                <a href="#">BLOG</a>
-                <a href="#">ABOUT ME</a>
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Designs</a>
+                <!-- <a href="#">Articles</a> -->
+                <a href="#">Contacts</a>
                 <a href="http://" target="_blank" rel="noopener noreferrer">RESUME</a>
             </div>
         </nav>
@@ -77,13 +102,18 @@
             <div id="left">
                 <h1>Vick Greenfields</h1>
                 <h3>Frontend Developer & UI Designer</h3>
-                <p>Turning great designs into stunning Web Pages is my passion.</p>
+                <p>Follow me on 
+                    <a href="http://twitter.com/akintoluvic" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="http://linkedin.com/in/akintoluvic" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="http://github.com/akintoluvic" target="_blank"><i class="fab fa-github"></i></a>
+                </p>
             </div>
             <div id="right">
-                <p><strong>My Passion:</strong>Turning great designs into stunning Web Pages is my passion.</p>
+                <p id="p-one"><strong>My Passion:</strong> Turning great designs into stunning Web Pages is my passion.</p>
                 <p><strong>Tools:</strong>  HTML5/CSS3, JavaScrippt, React,
                         Redux, Axios, Node, Redux, MongoDB,
                         Bootstrap, Figma, Github</p>
+                        
             </div>
         </div>
     </header>
