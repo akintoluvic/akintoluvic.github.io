@@ -55,14 +55,18 @@
             padding: 0 5vw;
         }
         header #text #left .fab {height: 14px; width: 14px;margin-left: 15px;color: #ffffff;}
-        header #text #left p {font-size: 1.1rem; margin-top: 3px;}
+        header #text #left p {font-size: 1.1rem; margin-top: -13px;}
         /* header #left {padding-left: 105px;} */
         header #right {padding-top: 28vh;}
-        header #right p {font-size: 1.3rem; width: 33vw;margin-left: 30px;}
+        header #right p {font-size: 1.3rem; width: 28vw;margin-left: 30px;}
         header #right #p-one {margin-bottom: 20px;}
         header h1 {margin-top: 30vh; font-size: 3.1rem;}
         header h3 {font-size: 1.55rem; margin-top: -35px;}
         
+        footer {
+            background-color: black;
+            padding: 0 20px 20px;
+        }
 
         #big-card {
             width: 430px;
@@ -84,14 +88,14 @@
 </head>
 <body>
     
-    <header>
+    <header id="home">
         <nav>
             <section>
                 <img src="./images/VickyG.png" alt="" srcset="">
             </section>
             <div>
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
+                <a href="#home">Home</a>
+                <a href="#publi">Projects</a>
                 <a href="#">Designs</a>
                 <!-- <a href="#">Articles</a> -->
                 <a href="#">Contacts</a>
@@ -140,7 +144,7 @@
             <P>Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more.</P>
         </div>
     </section>
-    <section>
+    <section id="publi">
         <h3>Publications</h3>
         <div id="big-card">
             <img src="./images/b.jpg" alt="">
@@ -148,6 +152,23 @@
             <P>Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more.</P>
         </div>
     </section>
+
+
+    <footer>
+        <nav>
+            <section>
+                <img src="./images/VickyG.png" alt="" srcset="">
+            </section>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#publi">Projects</a>
+                <a href="#">Designs</a>
+                <!-- <a href="#">Articles</a> -->
+                <a href="#">Contacts</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">RESUME</a>
+            </div>
+        </nav>
+    </footer>
     
 </body>
 </html>
