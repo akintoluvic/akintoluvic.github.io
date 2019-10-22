@@ -34,7 +34,7 @@
             display: flex;
             justify-content: space-between;
         }
-        header nav div :last-child {
+        nav div :last-child {
             padding: 10px 20px;
             background-color: #fff;
             color:black;
@@ -104,9 +104,17 @@
             }
             header nav div :last-child {
                 margin-left: 10px;
+                padding: 5px 10px;
+            }
+            footer nav div :last-child {
+                display: none;
             }
             header #text {
                 flex-direction: column;
+                padding: 0;
+            }
+            header h1 {
+                margin-top: 50px;
             }
             footer {
                 padding: 0 10px 3px;
@@ -134,7 +142,7 @@
             <div id="left">
                 <h1>Vick Greenfields</h1>
                 <h3>Frontend Developer & UI Designer</h3>
-                <p>Follow me on 
+                <p><strong>Follow me on </strong> 
                     <a href="http://twitter.com/akintoluvic" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="http://linkedin.com/in/akintoluvic" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="http://github.com/akintoluvic" target="_blank"><i class="fab fa-github"></i></a>
@@ -193,6 +201,7 @@
                 <a href="#">Designs</a>
                 <!-- <a href="#">Articles</a> -->
                 <a href="#">Contacts</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">RESUME</a>
             </div>
         </nav>
         <hr>
