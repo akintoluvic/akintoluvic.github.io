@@ -120,6 +120,7 @@ body {
     padding: 30px 0;
     background: #f5f5f5;
     border-top: 10px solid #778492;
+    /* display: flex; */
   }
   
   .header .btn {
@@ -129,6 +130,8 @@ body {
   
   .header .profile-image {
     margin-right: 30px;
+    height: 200px;
+    border-radius: 50%;
   }
   
   .header .profile-content .name {
