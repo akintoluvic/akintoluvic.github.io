@@ -22,27 +22,51 @@
         box-sizing: border-box;
       }
       body {
-        width: 100%;
-        margin: 0;
+        width: 100vw;
         background-color: #353364;
         color: #fff;
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 1200px;
+          box-sizing: border-box;
+      }
+      header #left {
+          width: 585px;
+      }
+      h1 {
+          font-size: 48px;
+      }
+      h2 {
+          font-size: 32px;
+          margin: -30px 0 20px;
+      }
+      p {
+          font-size: 21px;
       }
     </style>
 </head>
 <body>
     <div>
         <img src="" alt="" srcset="">
-        <ul>
+        <div>
             <li>Home</li>
             <li>Resume</li>
-        </ul>
+        </div>
     </div>
-    <div>
-        <div>
+    <header>
+        <div id="left">
             <h1>Vick Greenfields</h1>
             <h2>Frontend/UI Developer</h2>
             <p>We help you deliver quality User Experience through our user research approach to the delivery of intuitive user interfaces for your Web and Mobile Apps.</p>
         </div>
-    </div>
+        <img src="./images/dev.png" alt="Developer" srcset="">
+    </header>
 </body>
 </html>
