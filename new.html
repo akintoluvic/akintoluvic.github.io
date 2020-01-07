@@ -31,14 +31,27 @@
         flex-direction: column;
       }
       header {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+      }
+      section {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          width: 1200px;
           box-sizing: border-box;
+          padding: 0 40px;
       }
-      header #left {
+      section #left {
           width: 585px;
+      }
+      #des {
+          margin-bottom: -65px;
+          margin-left: -40px;
+      }
+      #dev{
+          height: 500px;
       }
       h1 {
           font-size: 48px;
@@ -50,23 +63,48 @@
       p {
           font-size: 21px;
       }
+      #tools {
+          width: 1200;
+          height: 90px;
+          background-color: #353364;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
     </style>
 </head>
 <body>
-    <div>
-        <img src="" alt="" srcset="">
-        <div>
-            <li>Home</li>
-            <li>Resume</li>
-        </div>
-    </div>
     <header>
-        <div id="left">
-            <h1>Vick Greenfields</h1>
-            <h2>Frontend/UI Developer</h2>
-            <p>We help you deliver quality User Experience through our user research approach to the delivery of intuitive user interfaces for your Web and Mobile Apps.</p>
+        <div>
+            <img src="" alt="" srcset="">
+            <div>
+                <li>Home</li>
+                <li>Resume</li>
+            </div>
         </div>
-        <img src="./images/dev.png" alt="Developer" srcset="">
+        <section>
+            <div id="left">
+                <img src="./images/des.png" alt="" id="des">
+                <h1>Vick Greenfields</h1>
+                <h2>Frontend/UI Developer</h2>
+                <p>We help you deliver quality User Experience through our user research approach to the delivery of intuitive user interfaces for your Web and Mobile Apps.</p>
+            </div>
+            <img src="./images/dev.png" alt="Developer" id="dev" srcset="">
+        </section>
+        <div id="tools">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Redux</span>
+            <span>Node</span>
+            <span>MongoDB</span>
+            <span>Bootstrap</span>
+            <span>Express</span>
+            <span>SASS</span>
+            <span>Github</span>
+        </div>
     </header>
+
 </body>
 </html>
