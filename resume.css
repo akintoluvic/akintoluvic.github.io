@@ -13,6 +13,9 @@ body {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 99%;
+    margin: 0;
+    box-sizing: border-box;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -120,7 +123,8 @@ body {
     padding: 30px 0;
     background: #f5f5f5;
     border-top: 10px solid #778492;
-    /* display: flex; */
+    display: flex;
+    box-sizing: border-box;
   }
   
   .header .btn {
@@ -136,7 +140,7 @@ body {
   
   .header .profile-content .name {
     color: #49515a;
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 5px;
     margin-top: 30px;
   }
@@ -166,6 +170,9 @@ body {
     color: #fff;
     text-align: center;
   }
+  .header .profile-content .social a i {
+    margin-top: 10px;
+  }
   
   .header .profile-content .social a:hover {
     background: #778492;
@@ -180,6 +187,7 @@ body {
   .sections-wrapper {
     padding-top: 60px;
     padding-bottom: 60px;
+    box-sizing: border-box;
   }
   
   .section {
@@ -189,6 +197,7 @@ body {
   .section .section-inner {
     background: #fff;
     padding: 30px;
+    box-sizing: border-box;
   }
   
   .section .heading {
@@ -307,6 +316,7 @@ body {
     border-top: 5px solid #276582;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
+    box-sizing: border-box;
   }
   
   .latest .has-ribbon .ribbon .text:before {
@@ -409,6 +419,9 @@ body {
   
   .info li {
     margin-bottom: 15px;
+  }
+  .info li i {
+    margin-right: 7px;
   }
   
   .info li:last-child {
