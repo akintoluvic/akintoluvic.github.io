@@ -1,320 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vick Greenfields' Portfolio Page</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <!-- <link rel="stylesheet" href="normalize.css"> -->
-    <script
-      src="https://kit.fontawesome.com/372714b41d.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     -->
+<head>
+    <title>Vick Greenfields: Front-end Developer</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vick Greenfields: Front-end Developer">
+    <meta name="author" content="Vick Greenfields">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- Port CSS -->  
+    <link id="theme-style" rel="stylesheet" href="./resme.css">
     <style>
-      * {
+        * {
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
         box-sizing: border-box;
       }
       body {
-        width: 100%;
-        margin: 0;
+        width: 100vw;
+        background-color: #353364;
+        color: #fff;
+        /* width: 1200px; */
+        margin: auto;
+        /* display: flex;
+        flex-direction: column; */
       }
       header {
-        background-image: url("./images/bgport.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        color: #ffffff;
-        background-color: black;
+        display: flex;
+        flex-direction: column;
         height: 100vh;
-        width: 100%;
-        padding: 0 60px;
-      }
-      header img {
-        height: 28px;
-        width: 84px;
+        margin: 0 auto;
+        width: 1200px;
+        justify-content: space-between;
       }
       nav {
-        padding-top: 30px;
-        display: flex;
-        justify-content: space-between;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 30px;
       }
-      nav div :last-child {
-        padding: 10px 20px;
-        background-color: #fff;
-        color: black;
-        border-radius: 10px;
-        margin-left: 30px;
+      nav div {
+          display: inline-flex;
       }
       nav a {
-        text-decoration: none;
-        color: #ffffff;
-        padding-left: 30px;
-        font-weight: bold;
+          color: #fff;
+          text-decoration: none;
+          margin-left: 50px;
       }
-      header #text {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 5vw;
+      section {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          box-sizing: border-box;
+          padding: 0 40px;
       }
-      header #text #left .fab {
-        height: 14px;
-        width: 14px;
-        margin-left: 15px;
-        color: #ffffff;
+      section #left {
+          width: 585px;
+          margin-top: -45px;
       }
-      header #text #left p {
-        font-size: 1.1rem;
-        margin-top: -13px;
+      section #left a {
+          margin-right: 25px;
+          text-decoration: none;
       }
-      /* header #left {padding-left: 105px;} */
-      header #right {
-        padding-top: 30vh;
+      #des {
+          margin-bottom: -65px;
+          margin-left: -40px;
       }
-      header #right p {
-        font-size: 1.3rem;
-        width: 28vw;
-        margin-left: 30px;
+      #dev{
+          height: 500px;
       }
-      header #right #p-one {
-        margin-bottom: 20px;
+      h1 {
+          font-size: 48px;
+          /* margin-top: -65px; */
       }
-      header h1 {
-        margin-top: 30vh;
-        font-size: 3.1rem;
+      h2 {
+          font-size: 32px;
+          margin: -35px 0 20px;
       }
-      header h3 {
-        font-size: 1.55rem;
-        margin-top: -35px;
+      p {
+          font-size: 21px;
       }
-
-      footer {
-        background-color: black;
-        padding: 0 60px 3px;
-        color: #fff;
+      #tools {
+          width: 100%;
+          height: 90px;
+          background-color: #2A3749;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-top-left-radius: 9px;
+          border-top-right-radius: 9px;
+          padding: 0 20px;
       }
-      footer p {
-        text-align: center;
-      }
-      #projects {
-        padding: 60px;
-      }
-      #projects h1 {
-        text-align: center;
-        font-size: 3.1rem;
-      }
-      #projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-
-      .big-card {
-        width: 430px;
-        height: 614px;
-        border: 1px solid black;
-        border-radius: 5px;
-        margin: 10px;
-      }
-      .big-card img {
-        height: 430px;
-        width: 100%;
-        object-fit: cover;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-      }
-      .big-card p,
-      .big-card h5 {
-        padding: 0 27px;
-      }
-
-      @media (max-width: 750px) {
+      @media (max-width: 1200px) {
         header {
-          background-image: image("./");
-          height: fit-content;
-          padding: 160px 10px 0;
-          text-align: center;
-        }
-        header h1 {font-size: 2.8rem;}
-        header h3 {font-size: 1.2rem; margin-bottom: 20px;}
-        nav {
-          flex-direction: column;
-          text-align: center;
-        }
-        nav a {
-          padding-left: 5px;
-          margin-bottom: 30px;
-        }
-        header nav div :last-child {
-          margin-left: 10px;
-          padding: 5px 10px;
-        }
-        footer nav div :last-child {
-          display: none;
-        }
-        header #text {
-          flex-direction: column;
-          padding: 0;
-        }
-        header h1 {
-          margin-top: 50px;
-        }
-        #projects {
-          padding: 20px;
-        }
-        .big-card img {
-          height: 330px;
-        }
-        footer {
-          padding: 0 10px 3px;
+            width: 100vw;
+            padding: 0 40px;
         }
       }
     </style>
-  </head>
-  <body>
-    <header id="home">
-      <nav>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/logo.png" alt="" srcset="">
+            <div>
+                <a href="">Home</a>
+                <a href="">Projects</a>
+                <a href="/resume.html">Resume</a>
+            </div>
+        </nav>
         <section>
-          <img src="./images/VickyG.png" alt="" srcset="" />
+            <div id="left">
+                <img src="./images/des.png" alt="" width='50' id="des">
+                <h1>Vick Greenfields</h1>
+                <h2>Frontend/UI Developer</h2>
+                <p>We help you deliver quality User Experience through our user research approach to the delivery of intuitive user interfaces for your Web and Mobile Apps.</p>
+                <span>
+                   <a href="http://github.com/akintoluvic" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/github.png" alt="" srcset="">
+                    </a>
+                    <a href="http://twitter.com/akintoluvic" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/twitter.png" alt="" srcset="">
+                    </a>
+                    <a href="http://linkedin.com/in/akintoluvic" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/linkedin.png" alt="" srcset="">
+                    </a> 
+                </span>
+            </div>
+            <img src="./images/dev.png" alt="Developer" id="dev" srcset="">
         </section>
-        <div>
-          <a href="#home">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#">Designs</a>
-          <!-- <a href="#">Articles</a> -->
-          <a href="#">Contacts</a>
-          <a href="http://" target="_blank" rel="noopener noreferrer">RESUME</a>
+        <div id="tools">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Redux</span>
+            <span>Node</span>
+            <span>MongoDB</span>
+            <span>Bootstrap</span>
+            <span>Express</span>
+            <span>SASS</span>
+            <span>Github</span>
         </div>
-      </nav>
-      <div id="text">
-        <div id="left">
-          <h1>Vick Greenfields</h1>
-          <h3>Frontend Developer & UI Designer</h3>
-          <p>
-            <strong>Follow me on </strong>
-            <a href="http://twitter.com/akintoluvic" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="http://linkedin.com/in/akintoluvic" target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="http://github.com/akintoluvic" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </p>
-        </div>
-        <div id="right">
-          <p id="p-one">
-            <strong>My Passion:</strong> Turning great designs into stunning Web
-            Pages is my passion.
-          </p>
-          <p>
-            <strong>Tools:</strong> HTML5/CSS3, JavaScrippt, React, Redux,
-            Axios, Node, Redux, MongoDB, Bootstrap, Figma, Github
-          </p>
-        </div>
-      </div>
     </header>
 
-    <!-- <section>
-      <h3>Tools and Languages</h3>
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Redux</span>
-      <span>Node</span>
-      <span>MongoDB</span>
-      <span>Bootstrap</span>
-      <span>Express</span>
-      <span>SASS</span>
-      <span>Github</span>
-    </section> -->
-
-    <section id='projects'>
-      <h1>Projects</h1>
-      <div id="projects-container">
-        <div class="big-card">
-          <img src="./images/b.jpg" alt="" />
-          <h5>ADVANCED VANILLA JAVASCRIPT CALCULATOR</h5>
-          <p>
-            Firebase Authentication provides backend services, easy-to-use SDKs,
-            and ready-made UI libraries to authenticate users to your app. It
-            supports authentication using passwords, phone numbers, popular
-            federated identity providers like Google, Facebook and Twitter, and
-            more.
-          </p>
-        </div>
-        <div class="big-card">
-          <img src="./images/b.jpg" alt="" />
-          <h5>ADVANCED VANILLA JAVASCRIPT CALCULATOR</h5>
-          <p>
-            Firebase Authentication provides backend services, easy-to-use SDKs,
-            and ready-made UI libraries to authenticate users to your app. It
-            supports authentication using passwords, phone numbers, popular
-            federated identity providers like Google, Facebook and Twitter, and
-            more.
-          </p>
-        </div>
-        <div class="big-card">
-          <img src="./images/b.jpg" alt="" />
-          <h5>ADVANCED VANILLA JAVASCRIPT CALCULATOR</h5>
-          <p>
-            Firebase Authentication provides backend services, easy-to-use SDKs,
-            and ready-made UI libraries to authenticate users to your app. It
-            supports authentication using passwords, phone numbers, popular
-            federated identity providers like Google, Facebook and Twitter, and
-            more.
-          </p>
-        </div>
-      </div>
-        
-    </section>
-    <!-- <section id="publi">
-      <h3>Publications</h3>
-      <div id="big-card">
-        <img src="./images/b.jpg" alt="" />
-        <h5>ADVANCED VANILLA JAVASCRIPT CALCULATOR</h5>
-        <p>
-          Firebase Authentication provides backend services, easy-to-use SDKs,
-          and ready-made UI libraries to authenticate users to your app. It
-          supports authentication using passwords, phone numbers, popular
-          federated identity providers like Google, Facebook and Twitter, and
-          more.
-        </p>
-      </div>
-    </section> -->
-
-    <footer>
-      <nav>
-        <section>
-          <img src="./images/VickyG.png" alt="" srcset="" />
-        </section>
-        <div>
-          <a href="#home">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#">Designs</a>
-          <!-- <a href="#">Articles</a> -->
-          <a href="#">Contacts</a>
-          <a href="http://" target="_blank" rel="noopener noreferrer">RESUME</a>
-        </div>
-      </nav>
-      <hr />
-      <p id='copyright'>&copy;2019 Vick Greenfields</p>
-    </footer>
-
-    <script>
-      var a = new Date();
-      var year = a.getFullYear()
-      let copy = document.getElementById('copyright');
-      copy.textContent = `©2019 - ${year} Vick Greenfields`
-    </script>
-  </body>
+</body>
 </html>
