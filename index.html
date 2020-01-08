@@ -52,7 +52,7 @@
           text-decoration: none;
           margin-left: 50px;
       }
-      section {
+      header section {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -71,7 +71,7 @@
           margin-bottom: -65px;
           margin-left: -40px;
       }
-      #dev{
+      #dev {
           height: 500px;
       }
       h1 {
@@ -92,14 +92,55 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
+          flex-wrap: wrap;
           border-top-left-radius: 9px;
           border-top-right-radius: 9px;
-          padding: 0 20px;
+          padding: 20px;
       }
       @media (max-width: 1200px) {
         header {
             width: 100vw;
             padding: 0 40px;
+        }
+      }
+      @media (min-width: 875px) and (max-width: 1000px) {
+            #dev2 {display: none;}
+      }
+      @media (max-width: 875px) {
+        header {
+            height: max-content;  
+        }
+        header section {
+            flex-direction: column;
+            text-align: center;
+        }
+        header section #left {
+            width: 100%;
+            margin: 20px 0;
+        }
+        #des, #dev {
+            display: none;
+        }
+        #dev2 {
+            margin-bottom: 20px;
+        }
+        #tools span {
+            padding: 0 5px;
+        }
+      }
+      @media (max-width: 500px) {
+        header section { padding: 0; }
+        header nav a {
+            margin-left: 20px;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 1em;
         }
       }
     </style>
@@ -133,6 +174,8 @@
                 </span>
             </div>
             <img src="./images/dev.png" alt="Developer" id="dev" srcset="">
+            <img src="./images/dev2.png" alt="Developer" id="dev2" srcset="">
+            <!-- <img src="./images/dev.png" alt="Developer" id="dev" sizes="(max-width: 500px) 270px, 471px" srcset="./images/dev.png 270w, ./images/dev.png 471w"> -->
         </section>
         <div id="tools">
             <span>HTML5</span>
