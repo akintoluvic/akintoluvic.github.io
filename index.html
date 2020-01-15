@@ -141,17 +141,37 @@
           border-radius: 9px;
           margin-right: 24px;
       }
+      .main-project img {
+          width: 100%;
+          height: 300px;
+          object-fit: fill;
+      }
       .card p {
           font-size: 16px;
           margin-top: -10px;
+      }
+      .skills p {
+          margin: 10px 0 5px;
+          color: #FFC400;
       }
       .projects {
           display: flex;
           margin-bottom: 20px;
       }
+      .skills-outer {
+          height: 13px;
+          width: 100%;
+          background-color: #fff;
+      }
+      .skills-inner {
+          height: 13px;
+          width: 65%;
+          background-color: #FFC400;
+      }
+      
 
       @media (max-width: 1200px) {
-        header {
+        header, main {
             width: 100vw;
             padding: 0 40px;
         }
@@ -254,18 +274,32 @@
             </div>
             <div class="card">
                 <h1>Latest Projects</h1>
+                <div class="main-project">
+                    <div>
+                        <img src="./images/samp.png" alt="project image">
+                    </div>
+                    <div class="description">
+                        <h3>DevAlert: Remote Job Platform</h3>
+                        <p>This a platform that curates remote jobs from all over the globe and inform developers of available job opportunities based on their predefined job preferences. It is a team project.</p>
+                        <span>
+                            <a href="">Code</a>
+                            <a href="">Live Preview</a>
+                        </span>
+                    </div>
+                </div>
+
                 <div class="projects">
                     <div>
                         <img src="./images/samp.png" alt="project image">
                     </div>
-                        <div class="description">
-                            <h3>DevAlert: Remote Job Platform</h3>
-                            <p>This a platform that curates remote jobs from all over the globe and inform developers of available job opportunities based on their predefined job preferences. It is a team project.</p>
-                            <span>
-                                <a href="">Code</a>
-                                <a href="">Live Preview</a>
-                            </span>
-                        </div>
+                    <div class="description">
+                        <h3>DevAlert: Remote Job Platform</h3>
+                        <p>This a platform that curates remote jobs from all over the globe and inform developers of available job opportunities based on their predefined job preferences. It is a team project.</p>
+                        <span>
+                            <a href="">Code</a>
+                            <a href="">Live Preview</a>
+                        </span>
+                    </div>
                 </div>
                 
                 <div class="projects">
@@ -287,7 +321,7 @@
                     </div>
                     <div class="description">
                         <h3>DevAlertMe</h3>
-                        <p>This a platform that curates remote jobs from all over the globe and info developers of available job opportunities base on their predefined job preferences. It is a team project.</p>
+                        <p>This a platform that curates remote jobs from all over the globe and info developers of available job opportunities bae on their predefined job preferences. It is a team project.</p>
                         <span>
                             <a href="">Code</a>
                             <a href="">Live Preview</a>
@@ -299,7 +333,30 @@
             
         </section>
         <section id="right">
-            <div class="card"></div>
+            <div class="card">
+                <h1>Skills</h1>
+                <div class="skills">
+                    <p class="skill">JavaScript</p>
+                    <div class="skills-outer">
+                        <div class="skills-inner"></div>
+                    </div>
+                    <p class="skill">JavaScript</p>
+                    <div class="skills-outer">
+                        <div class="skills-inner"></div>
+                    </div>
+                    <p class="skill">JavaScript</p>
+                    <div class="skills-outer">
+                        <div class="skills-inner"></div>
+                    </div>
+                    <p class="skill">JavaScript</p>
+                    <div class="skills-outer">
+                        <div class="skills-inner"></div>
+                    </div>
+                    <label for="file"></label>
+                    <progress id="file" max="100" value="70" />
+                </div>
+                
+            </div>
             <div class="card"></div>
         </section>
     </main>
