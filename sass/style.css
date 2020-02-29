@@ -18,11 +18,13 @@
 }
 
 .btn-primary {
-  background-color: white;
+  background-color: #418bff;
+  color: #fff;
 }
 
 .btn-secondary {
   background-color: #ff8700;
+  color: #fff;
 }
 
 * {
@@ -47,8 +49,8 @@ a {
 }
 
 .showcase {
-  background-color: #e0ffff;
-  color: #333;
+  background-color: #0e6cff;
+  color: #fff;
   height: 600px;
 }
 
@@ -75,12 +77,12 @@ a {
   padding: 15px;
 }
 
-.showcase nav a:hover {
-  color: #ff8700;
+.showcase nav a {
+  color: #fff;
 }
 
-.showcase a {
-  color: #333;
+.showcase nav a:hover {
+  color: #ff8700;
 }
 
 .showcase-content {
