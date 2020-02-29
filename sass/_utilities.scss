@@ -4,3 +4,27 @@
     margin: 0 auto;
     overflow: auto;
 }
+
+// Margin & Padding classes
+$spaceamoounts: (1,2,3,4,5,6);
+
+@each $space in $spaceamoounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+    .p-#{$space} {
+        margin: #{$space}rem;
+    }
+    .py-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .px-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+}
