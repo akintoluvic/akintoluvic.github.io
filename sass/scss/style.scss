@@ -1,6 +1,4 @@
 @import 'config';
-@import 'utilities';
-@import 'buttons';
 
 * {
     box-sizing: border-box;
@@ -12,6 +10,7 @@ body {
     background-color: $light-color;
     font-family: $font-stack;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 img {
@@ -24,7 +23,7 @@ a {
 
 .showcase {
     @include set-background($primary-color);
-    height: 600px;
+    height: 100vh;
 
     nav {
         display: flex;
@@ -57,7 +56,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        margin-top: 30px;
         // img {
         //     width: 50%;
         // }
@@ -70,3 +69,6 @@ a {
     }
 }
 
+@import 'utilities';
+@import 'buttons';
+@import 'mobile'
