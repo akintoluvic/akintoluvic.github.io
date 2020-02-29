@@ -24,7 +24,7 @@ a {
 
 .showcase {
     background-color: $primary-color;
-    color: #fff;
+    color: set-text-color($primary-color);
     height: 600px;
 
     nav {
@@ -47,7 +47,7 @@ a {
     }
 
     a {
-        color: #fff;
+        color: set-text-color($primary-color);
     }
 
     // instead of writing .showcase-content '&' can 
