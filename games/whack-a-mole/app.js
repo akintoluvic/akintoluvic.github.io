@@ -4,6 +4,7 @@ const timeLeft = document.querySelector('#time-left')
 const score = document.querySelector('#score')
 
 let result = 0;
+let currentTime = timeLeft.textContent
 
 function randomSquare() {
     // remove class name mole from all squares
@@ -19,7 +20,7 @@ function randomSquare() {
 }
 
 square.forEach(id => {
-    addEventListener('mouseup', () => {
+    addEventListener('click', () => {
         if(id.id === hitPosition) {
             result = result + 1
             score.textContent = result
