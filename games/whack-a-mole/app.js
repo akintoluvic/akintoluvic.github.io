@@ -17,11 +17,13 @@ function randomSquare() {
 
     // assign the id of the random position to hitPosition
     hitPosition = randomPosition.id
+    console.log(hitPosition)
 }
 
-square.forEach(id => {
-    addEventListener('click', () => {
-        if(id.id === hitPosition) {
+square.forEach(squ => {
+    addEventListener('mouseup', () => {
+        console.log(squ.id)
+        if(squ.id === hitPosition) {
             result = result + 1
             score.textContent = result
         }
@@ -34,3 +36,15 @@ function moveMole() {
 }
 
 moveMole()
+
+function countDown() {
+    currentTime--
+    timeLeft.textContent = currentTime
+
+    if(currentTime === 0) {
+        clearInterval(timerId)
+        alert('GAME OVER! Your final score is' + result)
+    }
+}
+
+let timerId = setInterval(countDown, 1000)
