@@ -6,3 +6,6 @@ Issues to resolve
 ## Whack a Mole
 - The event listener on each square is misfiring, even clicking when the you click outside the game grid.
 - It also need a restart button
+
+## Connect Four
+- Integrate a finish game & Restart button
