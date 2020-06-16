@@ -1,4 +1,4 @@
-const square = document.querySelectorAll('.square')
+const squares = document.querySelectorAll('.square')
 const mole = document.querySelectorAll('.mole')
 const timeLeft = document.querySelector('#time-left')
 const score = document.querySelector('#score')
@@ -8,22 +8,22 @@ let currentTime = timeLeft.textContent
 
 function randomSquare() {
     // remove class name mole from all squares
-    square.forEach(className => {
+    squares.forEach(className => {
         className.classList.remove('mole')
     })
 
-    let randomPosition = square[Math.floor(Math.random() * 9)]
+    let randomPosition = squares[Math.floor(Math.random() * 9)]
     randomPosition.classList.add('mole')
 
     // assign the id of the random position to hitPosition
     hitPosition = randomPosition.id
-    console.log(hitPosition)
+    // console.log(hitPosition)
 }
 
-square.forEach(squ => {
+squares.forEach(square => {
     addEventListener('mouseup', () => {
-        console.log(squ.id)
-        if(squ.id === hitPosition) {
+        console.log(square.id)
+        if(square.id === hitPosition) {
             result = result + 1
             score.textContent = result
         }
@@ -32,7 +32,7 @@ square.forEach(squ => {
 
 function moveMole() {
     let timerId = null
-    timerId = setInterval(randomSquare, 750 )
+    timerId = setInterval(randomSquare, 500 )
 }
 
 moveMole()
