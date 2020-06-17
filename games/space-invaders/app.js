@@ -87,6 +87,36 @@ document.addEventListener('DOMContentLoaded', () => {
     invaderId = setInterval(moveInvaders, 500)
 
 
+    // shoot aliens
+    function shoot(e) {
+        let laserId
+        let currentLaserIndex = currentShooterIndex
+
+        // move laser from shooter towards alien invaders
+        function moveLaser() {
+            squares[currentLaserIndex].classList.remove('laser')
+            currentLaserIndex -= width
+            squares[currentLaserIndex].classList.add('laser')
+
+            if (squares[currentLaserIndex].contains('invader')) {
+
+                squares[currentLaserIndex].classList.remove('laser')
+                squares[currentLaserIndex].classList.remove('invader')
+                squares[currentLaserIndex].classList.add('boom')
+
+                setTimeout(() => squares[currentLaserIndex].classList.remove('boom'), 250)
+                clearInterval(laserId)
+
+                const aliensTakenDown = alienInvaders.indexOf(currentLaserIndex)
+                alienInvadersTakenDown.push(aliensTakenDown)
+                result++
+                resultDisplay.textContent = result
+
+            }
+        }
+
+        
+    }
 
 
 
