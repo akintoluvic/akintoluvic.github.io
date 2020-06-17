@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(interval)
         score = 0
 
-        // randomApple()
+        randomApple()
 
         direction = 1
         scoreDisplay.innerText = score
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             squares[tail].classList.add('snake')
             currentSnake.push(tail)
 
-            // randomApple()
+            randomApple()
 
             score++
             scoreDisplay.textContent = score
@@ -69,8 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     
-
-    
+    // generate random apple
+    function randomApple() {
+        do{
+            appleIndex = Math.floor(Math.random() * squares.length)
+        } while (squares[appleIndex].classList.contains('snake')) // make sure square doesn't contain snake
+        squares[appleIndex].classList.add('apple')
+    }
 
 
     // assign functions to keycodes
@@ -82,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if(e.keyCode === 38) {
             direction = -width   // up arrow key
         } else if(e.keyCode === 37) {
-            direction - 1   // left arrow key
+            direction = - 1   // left arrow key
         } else if(e.keyCode === 40) {
             direction = +width   // down arrow key
         }
