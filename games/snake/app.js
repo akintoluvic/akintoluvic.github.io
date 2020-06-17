@@ -33,6 +33,45 @@ document.addEventListener('DOMContentLoaded', () => {
         interval = setInterval(moveOutcomes, intervalTime)
     }
 
+    // snake move outcomes
+    function moveOutcomes() {
+        // snake hitting border and self
+        if (
+            (currentSnake[0] + width >= (width * width) && direction === width) || //snake hits buttom
+            (currentSnake[0] % width === width - 1 && direction === 1) || //snake hits right wall
+            (currentSnake[0] % width === 0 && direction === -1) || //snake hits left wall
+            (currentSnake[0] - width < 0 && direction === -width) || //snake hits top
+            squares[currentSnake[0] + direction].classList.contains('snake') // snake hits self
+        ) {
+            return clearInterval(interval)
+        }
+
+        const tail = currentSnake.pop() // removes the last item of the snake array
+        squares[tail].classList.remove('snake') // remove the tail from the board
+        currentSnake.unshift(currentSnake[0] + direction) // gives direction to the head
+
+        // snake getting apple
+        if(squares[currentSnake[0]].classList.contains('apple')) {
+            squares[currentSnake[0]].classList.remove('apple')
+            squares[tail].classList.add('snake')
+            currentSnake.push(tail)
+
+            // randomApple()
+
+            score++
+            scoreDisplay.textContent = score
+            clearInterval(interval)
+            intervalTime = intervalTime * speed
+            interval = setInterval(moveOutcomes, intervalTime)
+        }
+        squares[currentSnake[0]].classList.add('snake')
+
+    }
+
+    
+
+    
+
 
     // assign functions to keycodes
     function control(e) {
@@ -44,12 +83,13 @@ document.addEventListener('DOMContentLoaded', () => {
             direction = -width   // up arrow key
         } else if(e.keyCode === 37) {
             direction - 1   // left arrow key
-        } else (e.keyCode === 40) {
+        } else if(e.keyCode === 40) {
             direction = +width   // down arrow key
         }
     }
 
     document.addEventListener('keyup', control)
+    startBtn.addEventListener('click', startGame)
 
 
 
