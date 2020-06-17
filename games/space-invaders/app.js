@@ -111,11 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 alienInvadersTakenDown.push(aliensTakenDown)
                 result++
                 resultDisplay.textContent = result
-
             }
+            
         }
 
-        
+
     }
 
 
