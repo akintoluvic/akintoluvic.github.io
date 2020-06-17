@@ -9,3 +9,6 @@ Issues to resolve
 
 ## Connect Four
 - Integrate a finish game & Restart button
+
+## Snake
+- Bug: there are randome times when if two arrow keys are pressed simultaneously before the snake moves, the snake just freezes.
