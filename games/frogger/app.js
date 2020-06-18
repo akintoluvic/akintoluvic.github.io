@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const width = 0
     let currentIndex = 76
+    let currentTime = 20
     let timerId
 
 
@@ -137,6 +138,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 logsRight.classList.remove('l5')
                 logsRight.classList.add('l4')
                 break
+        }
+    }
+
+
+    // rules to win
+    function win() {
+        if (squares[4].classList.contains('frog')) {
+            result.textContent = 'You Won'
+            squares[currentIndex].classList.remove('frog')
+            clearInterval(timerId)
+            document.removeEventListener('keyup', moveFrog)
+        }
+    }
+
+    // rules to lose
+    function lose() {
+        if (
+            (currentTime === 0) 
+            || (squares[currentIndex].classList.contains('c1')) 
+            || (squares[currentIndex].classList.contains('l5'))
+            || (squares[currentIndex].classList.contains('l4'))
+        ) {
+            result.textContent = 'You Lose'
+            squares[currentIndex].classList.remove('frog')
+            clearInterval(timerId)
+            document.removeEventListener('keyup', moveFrog)
         }
     }
 
