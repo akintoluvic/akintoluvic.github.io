@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = document.querySelector('#result')
     const button = document.querySelector('#button')
 
+    const carsLeft = document.querySelectorAll('car-left')
+    const carsRight = document.querySelectorAll('car-right')
+
+    const logsLeft = document.querySelectorAll('log-left')
+    const logsRight = document.querySelectorAll('log-right')
+
     const width = 0
     let currentIndex = 76
     let timerId
@@ -33,5 +39,33 @@ document.addEventListener('DOMContentLoaded', () => {
         lose()
         win()
     }
+
+    // move cars
+    function autoMoveCars() {
+        carsLeft.forEach(carLeft => moveCarLeft(carLeft))
+        carsRight.forEach(carRight => moveCarRight(carRight))
+    }
+
+    // move car left
+    function moveCarLeft(carLeft) {
+        switch (true) {
+            case carsLeft.classList.contains('c1'):
+                carsLeft.classList.remove('c1')
+                carsLeft.classList.add('c2')
+                break
+            case carsLeft.classList.contains('c2'):
+                carsLeft.classList.remove('c2')
+                carsLeft.classList.add('c3')
+                break
+            case carsLeft.classList.contains('c3'):
+                carsLeft.classList.remove('c3')
+                carsLeft.classList.add('c1')
+                break
+        }
+    }
+
+
+
+
 
 })
