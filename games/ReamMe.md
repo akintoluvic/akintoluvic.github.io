@@ -17,3 +17,7 @@ Issues to resolve
 - Add a restart button
 - let the shooter fire automatically
 - Add onScreen control for shooter (on mobile)
+
+## Frogger
+- Restat button needed
+- Add onScreen control for shooter (on mobile)
