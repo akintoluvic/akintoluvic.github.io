@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = document.querySelector('#result')
     const startButton = document.querySelector('#button')
 
-    const carsLeft = document.querySelectorAll('car-left')
-    const carsRight = document.querySelectorAll('car-right')
+    const carsLeft = document.querySelectorAll('.car-left')
+    const carsRight = document.querySelectorAll('.car-right')
 
-    const logsLeft = document.querySelectorAll('log-left')
-    const logsRight = document.querySelectorAll('log-right')
+    const logsLeft = document.querySelectorAll('.log-left')
+    const logsRight = document.querySelectorAll('.log-right')
 
     const width = 9
     let currentIndex = 76
@@ -50,17 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // move car left
     function moveCarLeft(carLeft) {
         switch (true) {
-            case carsLeft.classList.contains('c1'):
-                carsLeft.classList.remove('c1')
-                carsLeft.classList.add('c2')
+            case carLeft.classList.contains('c1'):
+                carLeft.classList.remove('c1')
+                carLeft.classList.add('c2')
                 break
-            case carsLeft.classList.contains('c2'):
-                carsLeft.classList.remove('c2')
-                carsLeft.classList.add('c3')
+            case carLeft.classList.contains('c2'):
+                carLeft.classList.remove('c2')
+                carLeft.classList.add('c3')
                 break
-            case carsLeft.classList.contains('c3'):
-                carsLeft.classList.remove('c3')
-                carsLeft.classList.add('c1')
+            case carLeft.classList.contains('c3'):
+                carLeft.classList.remove('c3')
+                carLeft.classList.add('c1')
                 break
         }
     }
@@ -68,17 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // move car right
     function moveCarRight(carRight) {
         switch (true) {
-            case carsRight.classList.contains('c1'):
-                carsRight.classList.remove('c1')
-                carsRight.classList.add('c3')
+            case carRight.classList.contains('c1'):
+                carRight.classList.remove('c1')
+                carRight.classList.add('c3')
                 break
-            case carsRight.classList.contains('c2'):
-                carsRight.classList.remove('c2')
-                carsRight.classList.add('c1')
+            case carRight.classList.contains('c2'):
+                carRight.classList.remove('c2')
+                carRight.classList.add('c1')
                 break
-            case carsRight.classList.contains('c3'):
-                carsRight.classList.remove('c3')
-                carsRight.classList.add('c2')
+            case carRight.classList.contains('c3'):
+                carRight.classList.remove('c3')
+                carRight.classList.add('c2')
                 break
         }
     }
@@ -92,25 +92,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // move logs left
     function moveLogLeft(logLeft) {
         switch (true) {
-            case logsLeft.classList.contains('l1'):
-                logsLeft.classList.remove('l1')
-                logsLeft.classList.add('l2')
+            case logLeft.classList.contains('l1'):
+                logLeft.classList.remove('l1')
+                logLeft.classList.add('l2')
                 break
-            case logsLeft.classList.contains('l2'):
-                logsLeft.classList.remove('l2')
-                logsLeft.classList.add('l3')
+            case logLeft.classList.contains('l2'):
+                logLeft.classList.remove('l2')
+                logLeft.classList.add('l3')
                 break
-            case logsLeft.classList.contains('l3'):
-                logsLeft.classList.remove('l3')
-                logsLeft.classList.add('l4')
+            case logLeft.classList.contains('l3'):
+                logLeft.classList.remove('l3')
+                logLeft.classList.add('l4')
                 break
-            case logsLeft.classList.contains('l4'):
-                logsLeft.classList.remove('l4')
-                logsLeft.classList.add('l5')
+            case logLeft.classList.contains('l4'):
+                logLeft.classList.remove('l4')
+                logLeft.classList.add('l5')
                 break
-            case logsLeft.classList.contains('l5'):
-                logsLeft.classList.remove('l5')
-                logsLeft.classList.add('l1')
+            case logLeft.classList.contains('l5'):
+                logLeft.classList.remove('l5')
+                logLeft.classList.add('l1')
                 break
         }
     }
@@ -118,25 +118,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // move logs right
     function moveLogRight(logRight) {
         switch (true) {
-            case logsRight.classList.contains('l1'):
-                logsRight.classList.remove('l1')
-                logsRight.classList.add('l5')
+            case logRight.classList.contains('l1'):
+                logRight.classList.remove('l1')
+                logRight.classList.add('l5')
                 break
-            case logsRight.classList.contains('l2'):
-                logsRight.classList.remove('l2')
-                logsRight.classList.add('l1')
+            case logRight.classList.contains('l2'):
+                logRight.classList.remove('l2')
+                logRight.classList.add('l1')
                 break
-            case logsRight.classList.contains('l3'):
-                logsRight.classList.remove('l3')
-                logsRight.classList.add('l2')
+            case logRight.classList.contains('l3'):
+                logRight.classList.remove('l3')
+                logRight.classList.add('l2')
                 break
-            case logsRight.classList.contains('l4'):
-                logsRight.classList.remove('l4')
-                logsRight.classList.add('l3')
+            case logRight.classList.contains('l4'):
+                logRight.classList.remove('l4')
+                logRight.classList.add('l3')
                 break
-            case logsRight.classList.contains('l5'):
-                logsRight.classList.remove('l5')
-                logsRight.classList.add('l4')
+            case logRight.classList.contains('l5'):
+                logRight.classList.remove('l5')
+                logRight.classList.add('l4')
                 break
         }
     }
@@ -154,12 +154,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // rules to lose
     function lose() {
-        if (
+        if ( 
             (currentTime === 0) 
             || (squares[currentIndex].classList.contains('c1')) 
-            || (squares[currentIndex].classList.contains('l5'))
-            || (squares[currentIndex].classList.contains('l4'))
-        ) {
+            || (squares[currentIndex].classList.contains('l5')) 
+            || (squares[currentIndex].classList.contains('l4')) 
+            ) {
             result.textContent = 'You Lose'
             squares[currentIndex].classList.remove('frog')
             clearInterval(timerId)
