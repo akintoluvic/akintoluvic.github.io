@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // move logs right
-    function moveLogrRight(logRight) {
+    function moveLogRight(logRight) {
         switch (true) {
             case logsRight.classList.contains('l1'):
                 logsRight.classList.remove('l1')
@@ -167,7 +167,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // move frog with the log left
+    function moveWithLogLeft() {
+        if (currentIndex >= 27 && currentIndex <35) {
+            squares[currentIndex].classList.contains('frog')
+            currentIndex += 1
+            squares[currentIndex].classList.contains('frog')
+        }
+    }
 
+    // move frog with the log right
+    function moveWithLogRight() {
+        if (currentIndex > 18 && currentIndex <= 26) {
+            squares[currentIndex].classList.contains('frog')
+            currentIndex -= 1
+            squares[currentIndex].classList.contains('frog')
+        }
+    }
+
+
+    // all the function that move pieces
+    function movePieces() {
+        currentTime--
+        timeLeft.textContent = currentTime
+        autoMoveCars()
+        autoMoveLogs()
+        moveWithLogLeft()
+        moveWithLogRight()
+        lose()
+        win()
+    }
+
+    // to start / pause
+    
 
 
 
