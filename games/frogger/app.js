@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const squares = document.querySelectorAll('.grid div')
     const timeLeft = document.querySelector('#time-left')
     const result = document.querySelector('#result')
-    const button = document.querySelector('#button')
+    const startButton = document.querySelector('#button')
 
     const carsLeft = document.querySelectorAll('car-left')
     const carsRight = document.querySelectorAll('car-right')
@@ -199,7 +199,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // to start / pause
-    
+    startButton.addEventListener('click', () => {
+        if (timerId) {
+            clearInterval(timerId)
+        } else {
+            timerId = setInterval(movePieces, 1000)
+            document.addEventListener('keyup', moveFrog)
+        }
+    })
 
 
 
