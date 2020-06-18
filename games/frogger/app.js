@@ -64,6 +64,82 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // move car right
+    function moveCarRight(carRight) {
+        switch (true) {
+            case carsRight.classList.contains('c1'):
+                carsRight.classList.remove('c1')
+                carsRight.classList.add('c3')
+                break
+            case carsRight.classList.contains('c2'):
+                carsRight.classList.remove('c2')
+                carsRight.classList.add('c1')
+                break
+            case carsRight.classList.contains('c3'):
+                carsRight.classList.remove('c3')
+                carsRight.classList.add('c2')
+                break
+        }
+    }
+
+    // move logs
+    function autoMoveLogs() {
+        logsLeft.forEach(logLeft => moveLogLeft(logLeft))
+        logsRight.forEach(logRight => moveLogRight(logRight))
+    }
+
+    // move logs left
+    function moveLogLeft(logLeft) {
+        switch (true) {
+            case logsLeft.classList.contains('l1'):
+                logsLeft.classList.remove('l1')
+                logsLeft.classList.add('l2')
+                break
+            case logsLeft.classList.contains('l2'):
+                logsLeft.classList.remove('l2')
+                logsLeft.classList.add('l3')
+                break
+            case logsLeft.classList.contains('l3'):
+                logsLeft.classList.remove('l3')
+                logsLeft.classList.add('l4')
+                break
+            case logsLeft.classList.contains('l4'):
+                logsLeft.classList.remove('l4')
+                logsLeft.classList.add('l5')
+                break
+            case logsLeft.classList.contains('l5'):
+                logsLeft.classList.remove('l5')
+                logsLeft.classList.add('l1')
+                break
+        }
+    }
+
+    // move logs right
+    function moveLogrRight(logRight) {
+        switch (true) {
+            case logsRight.classList.contains('l1'):
+                logsRight.classList.remove('l1')
+                logsRight.classList.add('l5')
+                break
+            case logsRight.classList.contains('l2'):
+                logsRight.classList.remove('l2')
+                logsRight.classList.add('l1')
+                break
+            case logsRight.classList.contains('l3'):
+                logsRight.classList.remove('l3')
+                logsRight.classList.add('l2')
+                break
+            case logsRight.classList.contains('l4'):
+                logsRight.classList.remove('l4')
+                logsRight.classList.add('l3')
+                break
+            case logsRight.classList.contains('l5'):
+                logsRight.classList.remove('l5')
+                logsRight.classList.add('l4')
+                break
+        }
+    }
+
 
 
 
