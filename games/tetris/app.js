@@ -2,12 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const startBtn = document.querySelector('button')
     const grid = document.querySelector('.grid')
+    const scoreDisplay = document.querySelector('.score-display')
+    const linesDisplay = document.querySelector('.lines-display')
     const displaySquares = document.querySelectorAll('.previous-grid div')
     let squares = Array.from(grid.querySelectorAll('div'))
     const width = 10
     const height = 20
     let currentPosition = 4
+    let currentIndex = 0
     let timerId
+    let score = 0
+    let lines = 0
     
 
 
@@ -174,6 +179,8 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPosition = 4
         drawTetromino()
         displayShape()
+        gameOver()
+        addScore()
       }
     }
 
@@ -189,6 +196,39 @@ document.addEventListener('DOMContentLoaded', () => {
             displayShape()
         }
     })
+
+    // game over
+    function gameOver() {
+        if(currentTetromino.some(index => 
+            squares[currentPosition + index].classList.contains('block2') )
+        ) {
+            scoreDisplay.textContent = 'end'
+            clearInterval(timerId)
+        }
+    }
+
+    // add score
+    function addScore() {
+        for ( currentIndex = 0; currentIndex < 199; currentIndex += width) {
+            const row = [currentIndex, currentIndex + 1, currentIndex + 2, currentIndex + 3, currentIndex + 4, currentIndex + 5, currentIndex + 6, currentIndex + 7, currentIndex + 8, currentIndex + 9]
+
+            if(row.every(index => squares[index].classList.contains('block2'))) {
+                score += 10
+                lines += 1
+                scoreDisplay.innerHTML = score
+                linesDisplay.innerHTML = lines
+                row.forEach(index => {
+                    squares[index].classList.remove('block2') 
+                    || squares[index].classList.remove('block')
+                })
+
+                // splice array for removing completed rows
+                const squaresRemoved = squares.splice(currentIndex, width)
+                squares = squaresRemoved.concat(squares)
+                squares.forEach(cell => grid.appendChild(cell))
+            }
+        }
+    }
 
 
 
