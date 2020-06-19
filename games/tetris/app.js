@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const startBtn = document.querySelector('button')
     const grid = document.querySelector('.grid')
+    const displaySquares = document.querySelectorAll('.previous-grid div')
     let squares = Array.from(grid.querySelectorAll('div'))
     const width = 10
     const height = 20
     let currentPosition = 4
-
+    let timerId
+    
 
 
     //assign function to key codes
@@ -129,9 +132,66 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    //show previous tetromino in scoreDisplay
+    const displayWidth = 4
+    let displayIndex = 0
+    let nextRandom = 0
+
+    const smallTetrominoes = [
+        [1, displayWidth + 1, displayWidth * 2 + 1, 2], /* lTetromino */
+        [0, displayWidth, displayWidth + 1, displayWidth * 2 + 1], /* zTetromino */
+        [1, displayWidth, displayWidth + 1, displayWidth + 2], /* tTetromino */
+        [0, 1, displayWidth, displayWidth + 1], /* oTetromino */
+        [1, displayWidth + 1, displayWidth * 2 + 1, displayWidth * 3 + 1] /* iTetromino */
+    ]
+
+    function displayShape() {
+        displaySquares.forEach(square => {
+        square.classList.remove('block')
+        // square.style.backgroundImage = 'none'
+        })
+        smallTetrominoes[nextRandom].forEach(index => {
+        displaySquares[displayIndex + index].classList.add('block')
+        // displaySquares[displayIndex + index].style.backgroundImage = colors[nextRandom]
+        })
+    }
+
+    //freeze the shape
+    function freeze() {
+      // if block has settled
+      if ( currentTetromino.some( (index) =>
+            squares[currentPosition + index + width].classList.contains("block3") 
+            || squares[currentPosition + index + width].classList.contains("block2"))
+      ) {
+        // make it block2
+        currentTetromino.forEach((index) =>
+          squares[index + currentPosition].classList.add("block2")
+        )
+        // start a new tetromino falling
+        random = nextRandom
+        nextRandom = Math.floor(Math.random() * theTetrominoes.length)
+        currentTetromino = theTetrominoes[random][currentRotation]
+        currentPosition = 4
+        drawTetromino()
+        displayShape()
+      }
+    }
 
 
-    drawTetromino()
+    startBtn.addEventListener('click', () => {
+        if(timerId) {
+            clearInterval(timerId)
+            timerId = null
+        } else {
+            drawTetromino()
+            timerId = setInterval(moveDown, 1000)
+            nextRandom = Math.floor(Math.random() * theTetrominoes.length)
+            displayShape()
+        }
+    })
+
+
+
 
 
 

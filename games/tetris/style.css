@@ -1,13 +1,25 @@
 .grid {
-    background-color: yellow;
+    background-color: blue;
     height: 400px;
     width: 200px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.grid div {
-    /* background-color: blue; */
+.previous-shape {
+    height: 80px;
+    width: 80px;
+}
+
+.previous-grid {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    background-color: yellow;
     height: 20px;
     width: 20px;
     /* border: 1px solid grey; */
