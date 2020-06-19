@@ -23,3 +23,7 @@ Issues to resolve
 - Add onScreen control for shooter (on mobile)
 
 ## Tetris
+- Restat button needed
+- Add onScreen control for shooter (on mobile)
+- Tetrominos still loading after game over
+- tetris should be coming down on their own
