@@ -1,5 +1,5 @@
 .grid {
-    background-color: blue;
+    background-color: yellow;
     height: 400px;
     width: 200px;
     display: flex;
@@ -7,7 +7,7 @@
 }
 
 .grid div {
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 20px;
     width: 20px;
 }
