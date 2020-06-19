@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const grid = document.querySelector('.grid')
+    let squares = Array.from(grid.querySelectorAll('div'))
     const width = 10
     const height = 20
+    let currentPosition = 4
 
     //The Tetrominoes
   const lTetromino = [
@@ -41,6 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
   ]
 
   const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino]
+
+
+  // Randomly select Tetromino
+  let random = Math.floor(Math.random() * theTetrominoes.length)
+  let currentRotation = 0
+  let currentTetRotated = theTetrominoes[random][currentRotation]
+
+
+  // move the Tetromino down
+
+
+
+
 
 
 

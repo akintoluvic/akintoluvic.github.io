@@ -11,3 +11,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.block {
+    background-color: blue;
+}
