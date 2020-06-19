@@ -48,10 +48,65 @@ document.addEventListener('DOMContentLoaded', () => {
   // Randomly select Tetromino
   let random = Math.floor(Math.random() * theTetrominoes.length)
   let currentRotation = 0
-  let currentTetRotated = theTetrominoes[random][currentRotation]
+  let currentTetromino = theTetrominoes[random][currentRotation]
 
 
-  // move the Tetromino down
+  // draw tetromino shape
+  function drawTetromino() {
+      currentTetromino.forEach( index => {
+          squares[currentPosition + index].classList.add('block')
+      })
+  }
+
+  // undraw tetromino shape
+  function unDrawTetromino() {
+    currentTetromino.forEach((index) => {
+      squares[currentPosition + index].classList.remove("block");
+    });
+  }
+
+  // move tetromino down
+  function moveDown() {
+      unDrawTetromino()
+      currentPosition = currentPosition += width
+      drawTetromino()
+    //   freeze()
+  }
+
+
+  // move right and prevent collision
+  function moveRight() {
+      unDrawTetromino()
+      const isAtRightEdge = currentTetromino.some(index => (currentPosition + index) % width === width - 1)
+      if (!isAtRightEdge) currentPosition += 1
+      if (currentTetromino.some(index => squares[currentPosition + index].classList.contains('block2'))) {
+          currentPosition -= 1
+      }
+      drawTetromino()
+  }
+
+  // move left and prevent collision
+  function moveLeft() {
+      unDrawTetromino()
+      const isAtLeftEdge = currentTetromino.some(index => (currentPosition + index) % width === 0)
+      if (!isAtLeftEdge) currentPosition -= 1
+      if (currentTetromino.some(index => squares[currentPosition + index].classList.contains('block2'))) {
+          currentPosition += 1
+      }
+      drawTetromino()
+  }
+
+
+  // rotate Tetromino
+  function rotate() {
+      unDrawTetromino()
+      currentRotation++
+      if (currentRotation === currentTetromino.length) {
+          currentRotation = 0
+      }
+      currentTetromino = theTetrominoes[random][currentRotation]
+      drawTetromino()
+  }
 
 
 
