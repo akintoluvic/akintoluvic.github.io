@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPosition = currentPosition += width
         console.log(currentPosition)
         drawTetromino()
-        //   freeze()
+          freeze()
     }
 
 
