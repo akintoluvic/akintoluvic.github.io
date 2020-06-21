@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scoreDisplay = document.querySelector('.score-display')
     const linesDisplay = document.querySelector('.lines-display')
     const displaySquares = document.querySelectorAll('.previous-grid div')
-    let squares = Array.from(grid.querySelectorAll('div'))
-    console.log(displaySquares)
+    let squares = Array.from(grid.querySelectorAll('.game div'))
     const width = 10
     const height = 20
     let currentPosition = 4
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerId
     let score = 0
     let lines = 0
-    // squares.forEach(square => square.style.backgroundColor = 'yellow')
     
 
 
