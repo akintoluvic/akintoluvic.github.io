@@ -11,7 +11,7 @@ Issues to resolve
 - Integrate a finish game & Restart button
 
 ## Snake
-- Bug: there are randome times when if two arrow keys are pressed simultaneously before the snake moves, the snake just freezes.
+- Bug: there are random times when if two arrow keys are pressed simultaneously before the snake moves, the snake just freezes.
 
 ## Space Invaders
 - Add a restart button
@@ -23,7 +23,7 @@ Issues to resolve
 - Add onScreen control for shooter (on mobile)
 
 ## Tetris
-- Restat button needed
+- Restart button needed
 - Add onScreen control for shooter (on mobile)
 - Tetrominos still loading after game over
 - tetris should be coming down on their own
