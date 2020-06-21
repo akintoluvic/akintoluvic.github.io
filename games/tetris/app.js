@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const startBtn = document.querySelector('button')
+    const startBtn = document.querySelector('.gam button')
     const grid = document.querySelector('.grid')
     const scoreDisplay = document.querySelector('.score-display')
     const linesDisplay = document.querySelector('.lines-display')

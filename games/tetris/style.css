@@ -18,7 +18,7 @@
     flex-wrap: wrap;
 }
 
-div {
+.grid div {
     background-color: yellow;
     height: 20px;
     width: 20px;
@@ -27,6 +27,7 @@ div {
 
 .block {
     background-color: blue;
+    border: 1px solid grey;
 }
 
 .block2 {
