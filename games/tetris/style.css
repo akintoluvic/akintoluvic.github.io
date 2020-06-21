@@ -18,6 +18,12 @@
     flex-wrap: wrap;
 }
 
+/* .previous-grid div {
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+} */
+
 div {
     background-color: yellow;
     height: 20px;
