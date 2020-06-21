@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const linesDisplay = document.querySelector('.lines-display')
     const displaySquares = document.querySelectorAll('.previous-grid div')
     let squares = Array.from(grid.querySelectorAll('div'))
+    console.log(squares)
     const width = 10
     const height = 20
     let currentPosition = 4
@@ -94,9 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // move tetromino down
     function moveDown() {
         unDrawTetromino()
-        console.log(currentPosition)
         currentPosition = currentPosition += width
-        console.log(currentPosition)
         drawTetromino()
           freeze()
     }
