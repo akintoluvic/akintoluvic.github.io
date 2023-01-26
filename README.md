@@ -10,18 +10,19 @@ Welcome to my page, I am a self taught, goal achieving, determined guy that enjo
 - 😄 Pronouns: Him/He
 - ⚡ Fun fact: I'm really not a hard guy 😄. I enjoy good music and relaxing at the beach.
 
-
+<br />
+<br />
 <header>
   <div align="center">- 📫 How to reach me: </div>
   <br/>
   <div align="center">
-    <a href="https://victora.dev">
+    <a target="_blank" href="https://victora.dev">
       <img alt="My Personal Website" src="https://img.shields.io/static/v1?color=%237733ff&label=Website&message=victora.dev&style=flat&logo=amp&logoColor=ffffff&labelColor=334155">
     </a>
-    <a href="https://twitter.com/akintoluvic">
+    <a target="_blank" href="https://twitter.com/akintoluvic">
       <img alt="My Twitter Profile" src="https://img.shields.io/badge/Twitter-akintoluvic-7733ff?style=flat&logo=twitter&logoColor=ffffff&labelColor=334155">
     </a>
-    <a href="https://linkedin.com/in/akintoluvic">
+    <a target="_blank" href="https://linkedin.com/in/akintoluvic">
       <img alt="Linkedin profile" src="https://img.shields.io/static/v1?color=%237733ff&label=Linkedin&message=@akintoluvic&style=flat&logo=linkedin&logoColor=ffffff&labelColor=334155">
     </a>
   </div>
@@ -35,13 +36,13 @@ Welcome to my page, I am a self taught, goal achieving, determined guy that enjo
   <div>
     <br />
     <div>
-      <a href="https://github.com/akintoluvic">
+      <a target="_blank" href="https://github.com/akintoluvic">
         <img alt="This week GitHub profile views" src="https://komarev.com/ghpvc/?username=akintoluvic&style=flat&color=7733ff&label=This+week+GitHub+profile+views" />
       </a>
       <br /><br />
     </div>
     <div>
-      <a href="https://github.com/akintoluvic?tab=repositories&q=&type=&language=&sort=stargazers">
+      <a target="_blank" href="https://github.com/akintoluvic?tab=repositories&q=&type=&language=&sort=stargazers">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?layout=compact&username=akintoluvic&show_icons=true&title_color=c4b5fd&icon_color=475569&bg_color=90,0f172a,1e293b&text_color=cbd5e1&border_color=1e293b&text_bold=false&count_private=true">
           <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?layout=compact&username=akintoluvic&count_private=true" />
@@ -49,7 +50,7 @@ Welcome to my page, I am a self taught, goal achieving, determined guy that enjo
         </picture>
       </a>
       <br /><br />
-      <a href="https://github.com/akintoluvic?tab=repositories&q=&type=&language=&sort=stargazers">
+      <a  target="_blank" href="https://github.com/akintoluvic?tab=repositories&q=&type=&language=&sort=stargazers">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=akintoluvic&show_icons=true&title_color=c4b5fd&icon_color=475569&bg_color=90,0f172a,1e293b&text_color=cbd5e1&border_color=1e293b&text_bold=false&count_private=true&ring_color=7733ff">
           <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=akintoluvic" />
