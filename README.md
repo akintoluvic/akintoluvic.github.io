@@ -7,12 +7,13 @@ Welcome to my page, I am a self taught, goal achieving, determined guy that enjo
 - 🌱 I’m currently learning how to be a very versertile software engineer. 
 - 👯 I’m looking to collaborate on projects that would make me think more and code less and add more to my bank balance.
 - 💬 Ask me about anything, if I don't know it, I would get back to you.
-- 📫 How to reach me: linkedin: [@akintoluvic](http://www.linkedin.com/in/akintoluvic)
 - 😄 Pronouns: Him/He
 - ⚡ Fun fact: I'm really not a hard guy 😄. I enjoy good music and relaxing at the beach.
 
 
 <header>
+  <div align="center">- 📫 How to reach me: </div>
+  <br/>
   <div align="center">
     <a href="https://victora.dev">
       <img alt="My Personal Website" src="https://img.shields.io/static/v1?color=%237733ff&label=Website&message=victora.dev&style=flat&logo=amp&logoColor=ffffff&labelColor=334155">
@@ -21,7 +22,7 @@ Welcome to my page, I am a self taught, goal achieving, determined guy that enjo
       <img alt="My Twitter Profile" src="https://img.shields.io/badge/Twitter-akintoluvic-7733ff?style=flat&logo=twitter&logoColor=ffffff&labelColor=334155">
     </a>
     <a href="https://linkedin.com/in/akintoluvic">
-      <img alt="Linkedin profile" src="https://img.shields.io/static/v1?color=%237733ff&label=Figma&message=@akintoluvic&style=flat&logo=linkedin&logoColor=ffffff&labelColor=334155">
+      <img alt="Linkedin profile" src="https://img.shields.io/static/v1?color=%237733ff&label=Linkedin&message=@akintoluvic&style=flat&logo=linkedin&logoColor=ffffff&labelColor=334155">
     </a>
   </div>
 </header>
