@@ -1,6 +1,18 @@
 <div align="center">
   Hi there 👋 <br />
-  <h1 style="font-size:37">I'm Akintunde Victor</h1>
+  <h1>I'm Akintunde Victor</h1>
+  <br />
+  <div align="center">
+    <a target="_blank" href="https://victora.dev">
+      <img alt="My Personal Website" src="https://img.shields.io/static/v1?color=%237733ff&label=Website&message=victora.dev&style=flat&logo=amp&logoColor=ffffff&labelColor=334155">
+    </a>
+    <a target="_blank" href="https://twitter.com/akintoluvic">
+      <img alt="My Twitter Profile" src="https://img.shields.io/badge/Twitter-akintoluvic-7733ff?style=flat&logo=twitter&logoColor=ffffff&labelColor=334155">
+    </a>
+    <a target="_blank" href="https://linkedin.com/in/akintoluvic">
+      <img alt="Linkedin profile" src="https://img.shields.io/static/v1?color=%237733ff&label=Linkedin&message=@akintoluvic&style=flat&logo=linkedin&logoColor=ffffff&labelColor=334155">
+    </a>
+  </div>
 </div>
 
 Welcome to my page, I am a self taught, goal achieving, determined guy that enjoys solving problems.
@@ -17,17 +29,7 @@ Welcome to my page, I am a self taught, goal achieving, determined guy that enjo
 <header>
   <div align="center">- 📫 How to reach me: </div>
   <br/>
-  <div align="center">
-    <a target="_blank" href="https://victora.dev">
-      <img alt="My Personal Website" src="https://img.shields.io/static/v1?color=%237733ff&label=Website&message=victora.dev&style=flat&logo=amp&logoColor=ffffff&labelColor=334155">
-    </a>
-    <a target="_blank" href="https://twitter.com/akintoluvic">
-      <img alt="My Twitter Profile" src="https://img.shields.io/badge/Twitter-akintoluvic-7733ff?style=flat&logo=twitter&logoColor=ffffff&labelColor=334155">
-    </a>
-    <a target="_blank" href="https://linkedin.com/in/akintoluvic">
-      <img alt="Linkedin profile" src="https://img.shields.io/static/v1?color=%237733ff&label=Linkedin&message=@akintoluvic&style=flat&logo=linkedin&logoColor=ffffff&labelColor=334155">
-    </a>
-  </div>
+  
 </header>
 
 <br />
