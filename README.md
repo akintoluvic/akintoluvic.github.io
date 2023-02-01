@@ -1,6 +1,6 @@
 <div align="center">
   ### Hi there 👋
-  <h1>I'm Akintunde Victor</h1>
+  <h1 font-size="36">I'm Akintunde Victor</h1>
 </div>
 
 Welcome to my page, I am a self taught, goal achieving, determined guy that enjoys solving problems.
