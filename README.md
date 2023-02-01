@@ -1,7 +1,7 @@
 <div align="center">
   Hi there 👋 <br />
   <h1>I'm Akintunde Victor</h1>
-  <br />
+  
   <div align="center">
     <a target="_blank" href="https://victora.dev">
       <img alt="My Personal Website" src="https://img.shields.io/static/v1?color=%237733ff&label=Website&message=victora.dev&style=flat&logo=amp&logoColor=ffffff&labelColor=334155">
@@ -15,6 +15,9 @@
   </div>
 </div>
 
+<br />
+<br />
+
 Welcome to my page, I am a self taught, goal achieving, determined guy that enjoys solving problems.
 
 - 🔭 I’m currently working on myself.
@@ -23,17 +26,6 @@ Welcome to my page, I am a self taught, goal achieving, determined guy that enjo
 - 💬 Ask me about anything, if I don't know it, I would get back to you.
 - 😄 Pronouns: Him/He
 - ⚡ Fun fact: I'm really not a hard guy 😄. I enjoy good music and relaxing at the beach.
-
-<br />
-<br />
-<header>
-  <div align="center">- 📫 How to reach me: </div>
-  <br/>
-  
-</header>
-
-<br />
-<br />
 
 <details>
   <summary><h2>📊 Statistics</h2></summary>
