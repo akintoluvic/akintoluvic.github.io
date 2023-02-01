@@ -1,6 +1,6 @@
 <div align="center">
-  Hi there 👋
-  <font size="7">I'm Akintunde Victor</font>
+  Hi there 👋 <br />
+  <h1 style="font-size:37">I'm Akintunde Victor</h1>
 </div>
 
 Welcome to my page, I am a self taught, goal achieving, determined guy that enjoys solving problems.
